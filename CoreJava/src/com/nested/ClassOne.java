@@ -1,17 +1,14 @@
 package com.nested;
+import java.lang.String;
 
 public class ClassOne {
 	
+	String s ="jagadeesh";
 	public void oneMethod() {
-		System.out.println("one method");
+		
 	}
 
-	public class ClassTwo{
-		public void TwoMethod() {
-			System.out.println("Two method");
-		}
-
-	}
+	
 	
 }
 
