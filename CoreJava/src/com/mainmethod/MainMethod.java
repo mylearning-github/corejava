@@ -1,19 +1,18 @@
 package com.mainmethod;
 
+import java.util.function.Predicate;
+
 import com.abstraction.Interface2;
 import com.constructor.Child;
 import com.iheritance.ChildInheritance;
 
 public class MainMethod {
 
-	static int  s;
+	
 	public static void main(String[] args) {
 		
-		Interface2 i = (f,g) -> {
-			System.out.println("Addition of two numbers is: " + s );
-			return s=  (f+g);
-		};
-		i.implrmentation(220,100);
+		Predicate<Integer> i = ii -> ii % 2 ==0;
+		System.out.println("Number is even or Odd: "+i.test(631212));
 	}
 
 }
